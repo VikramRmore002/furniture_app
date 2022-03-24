@@ -5,10 +5,12 @@ import 'package:furniture_app/Screens/detailscreen.dart';
 import 'Screens/myhomepage.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp( const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
 
 
   @override
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.white70,
       ),
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home: const MyHomePage(),
       routes:  {
         DetailScreen.routeName : (context) =>  DetailScreen( ),
       } ,
