@@ -1,6 +1,9 @@
 
 
+
+
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 
 class SearchBar extends StatelessWidget {
 
@@ -47,9 +50,10 @@ final TextEditingController searchController = TextEditingController();
               borderRadius: BorderRadius.circular(10.0),
             ),
             hintText: "Search",
+            // label: const Text("Search"),
             focusColor: Colors.amber,
             prefixIcon: const Icon(
-              Icons.search,
+              Feather.search,
               color: Colors.black,
             ),
             hintStyle: const TextStyle(

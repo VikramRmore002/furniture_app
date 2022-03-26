@@ -11,8 +11,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -44,6 +42,7 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(),
       routes:  {
         DetailScreen.routeName : (context) =>  DetailScreen( ),
+        MyHomePage.routeName : (context) =>  MyHomePage( ),
       } ,
     );
   }

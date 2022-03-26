@@ -21,8 +21,8 @@ class PopularItem extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(13)),
             child: Image.asset(
               "${data["image"]}",
-              height: 225,
-              width: 280,
+              // height: 225,
+              // width: 280,
               fit: BoxFit.cover,
             ),
           ),
